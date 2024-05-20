@@ -28,5 +28,7 @@ class MainActivity : AppCompatActivity() {
             p.dismiss()
             binding!!.recyclerView.adapter = FeedListAdapter(this, it)
         }
+
+        viewModel.postFeed("TEst", "This is test body")
     }
 }
